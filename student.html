@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>My Applications | InternRW</title>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-[#F8FAFC] min-h-screen flex flex-col">
+
+    <nav class="bg-white border-b border-slate-100 px-8 py-4 flex items-center justify-between sticky top-0 z-20">
+        <div class="flex items-center space-x-2">
+            <div class="bg-[#1E293B] p-1.5 rounded-lg text-white">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3z"/></svg>
+            </div>
+            <span class="text-xl font-bold text-[#0F172A]">InternRW</span>
+        </div>
+        
+        <div class="flex items-center space-x-6">
+            <div class="flex items-center space-x-3">
+                <span class="text-sm font-medium text-slate-600">Jean Pierre</span>
+                <div class="w-8 h-8 rounded-full bg-slate-100 border border-slate-200 flex items-center justify-center text-xs font-bold text-slate-500">JP</div>
+            </div>
+            <a href="index.html"><button class="text-slate-400 hover:text-slate-600">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"/></svg>
+            </button></a>
+        </div>
+    </nav>
+
+    <div class="flex flex-1 overflow-hidden">
+        <aside class="w-64 bg-white border-r border-slate-100 hidden md:flex flex-col py-8 px-4 space-y-2">
+            <a href="browserstudent.html" class="flex items-center space-x-3 px-4 py-3 rounded-xl text-slate-500 hover:bg-slate-50 transition font-medium">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+                <span>Browse</span>
+            </a>
+            <a href="student.html" class="flex items-center space-x-3 px-4 py-3 rounded-xl bg-[#F0FDFA] text-[#0D9488] font-bold">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+                <span>Applications</span>
+            </a>
+            <a href="profilestudent.html" class="flex items-center space-x-3 px-4 py-3 rounded-xl text-slate-500 hover:bg-slate-50 transition font-medium">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+                <span>Profile</span>
+            </a>
+        </aside>
+
+        <main class="flex-1 overflow-y-auto p-8">
+            <div class="max-w-5xl mx-auto">
+                <header class="mb-10">
+                    <h1 class="text-3xl font-bold text-[#0F172A] mb-1">My Applications</h1>
+                    <p class="text-slate-400">Track your internship applications</p>
+                </header>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
+                    <div class="bg-white p-6 rounded-3xl border border-slate-100 shadow-sm">
+                        <svg class="w-6 h-6 text-slate-400 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+                        <div class="text-3xl font-bold text-[#0F172A]">5</div>
+                        <div class="text-sm font-medium text-slate-400">Total</div>
+                    </div>
+                    <div class="bg-white p-6 rounded-3xl border border-slate-100 shadow-sm">
+                        <svg class="w-6 h-6 text-orange-400 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                        <div class="text-3xl font-bold text-[#0F172A]">2</div>
+                        <div class="text-sm font-medium text-slate-400">Pending</div>
+                    </div>
+                    <div class="bg-white p-6 rounded-3xl border border-slate-100 shadow-sm">
+                        <svg class="w-6 h-6 text-teal-500 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                        <div class="text-3xl font-bold text-[#0F172A]">2</div>
+                        <div class="text-sm font-medium text-slate-400">Accepted</div>
+                    </div>
+                    <div class="bg-white p-6 rounded-3xl border border-slate-100 shadow-sm">
+                        <svg class="w-6 h-6 text-red-500 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                        <div class="text-3xl font-bold text-[#0F172A]">1</div>
+                        <div class="text-sm font-medium text-slate-400">Rejected</div>
+                    </div>
+                </div>
+
+                <div class="space-y-4">
+                    <div class="bg-white p-6 rounded-[2rem] border border-slate-100 shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-6 hover:shadow-md transition">
+                        <div class="flex items-center space-x-5">
+                            <div class="w-14 h-14 bg-slate-50 rounded-2xl flex items-center justify-center border border-slate-100">
+                                <svg class="w-8 h-8 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-[#0F172A]">IT Support Intern</h3>
+                                <p class="text-slate-400 text-sm mb-3">Bank of Kigali</p>
+                                <div class="flex flex-wrap gap-3">
+                                    <span class="flex items-center bg-[#F0FDFA] text-[#0D9488] px-3 py-1 rounded-full text-xs font-bold">
+                                        <svg class="w-3.5 h-3.5 mr-1.5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3z"/></svg>
+                                        Information Technology
+                                    </span>
+                                    <span class="flex items-center text-slate-400 text-xs font-medium">
+                                        <svg class="w-3.5 h-3.5 mr-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                                        Kigali
+                                    </span>
+                                    <span class="text-slate-400 text-xs font-medium">Applied: 2026-02-10</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-[#FFF7ED] text-[#F97316] px-5 py-2 rounded-full text-sm font-bold border border-orange-100 flex items-center">
+                            <span class="w-2 h-2 rounded-full bg-orange-400 mr-2.5"></span>
+                            Pending
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-[2rem] border border-slate-100 shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-6 hover:shadow-md transition">
+                        <div class="flex items-center space-x-5">
+                            <div class="w-14 h-14 bg-slate-50 rounded-2xl flex items-center justify-center border border-slate-100">
+                                <svg class="w-8 h-8 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-[#0F172A]">Software Engineering Intern</h3>
+                                <p class="text-slate-400 text-sm mb-3">Andela Rwanda</p>
+                                <div class="flex flex-wrap gap-3">
+                                    <span class="flex items-center bg-[#F0FDFA] text-[#0D9488] px-3 py-1 rounded-full text-xs font-bold">
+                                        <svg class="w-3.5 h-3.5 mr-1.5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3z"/></svg>
+                                        Computer Science
+                                    </span>
+                                    <span class="flex items-center text-slate-400 text-xs font-medium">
+                                        <svg class="w-3.5 h-3.5 mr-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                                        Kigali
+                                    </span>
+                                    <span class="text-slate-400 text-xs font-medium">Applied: 2026-02-08</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-[#F0FDF4] text-[#16A34A] px-5 py-2 rounded-full text-sm font-bold border border-green-100 flex items-center">
+                            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                            Accepted
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>
